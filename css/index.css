@@ -1,3 +1,247 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	border: 1px solid gray;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+nav {
+	margin: auto;
+	width: 876px;
+}
+
+nav a {
+	text-decoration: none;
+	color: grey;
+	padding: 25px;
+}
+
+nav .logo {
+	padding-left: 50px;
+}
+
+header {
+	line-height: 0.75;
+	margin: 50px 0px 50px 100px;
+	width: 100%;
+}
+
+header .title {
+	font-size: 68px;
+	text-align: center;
+	display: inline-block;
+	margin: 0px 15px;
+	margin-right: 100px;
+}
+
+header .title button {
+	font-size: 30px;
+	border: 1px solid black;
+	margin-top: 0px;
+	padding: 6px 40px;
+}
+
+header img {
+	display: inline-block;
+	width: 35%;
+}
+
+.top-content {
+	width: 100%;
+}
+
+.top-content div {
+	display: inline-block;
+	width: 49%;
+	text-align: justify;
+	padding: 10px;
+}
+
+.middle-img {
+	margin: 30px 0px;
+}
+
+.bottom-content {
+	width: 100%;
+}
+
+.bottom-content div {
+	display: inline-block;
+	width: 33%;
+	text-align: justify;
+	padding: 10px;
+}
+
+.contact {
+	margin-top: 30px;
+}
+
+body { /* centers the website */
+	width: 876px;
+	margin: 0 auto;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+	nav{
+		display: flex;
+	
+	flex-direction:row-reverse;
+	justify-content: center;
+	width: 100%;
+	}
+header  img{
+	display: none;
+}
+
+header .title{
+display: flex;
+justify-content: center;
+}
+header .title button{
+	display: flex;
+	justify-content: center;
+	}
+.bottom-content{
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+	display: inline-table;
+	align-items: center;
+}
+
+.top-content{
+	justify-content: center;
+	width: 700px;
+}
+.middle-img{
+	width: 100%;
+	align-items: center;
+}
+}
+@media screen and (max-width: 500px) {
+	nav{
+		display: flex;
+	text-align: center;
+	flex-direction:column-reverse;
+	justify-content: center;
+	width: 100%;
+	}
+header  img{
+	display: none;
+}
+header .title button{
+	display: flex;
+	justify-content: center;
+}
+
+header .title{
+display: flex;
+justify-content: center;
+
+}
+.bottom-content .services{
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+	display: inline-table;
+	align-items: center;
+}
+.bottom-content .products{
+	justify-content: center;
+    width: 100%;
+    flex-direction: row;
+	display: inline-table;
+	align-items: center;
+}
+.bottom-content .vision{
+	justify-content: center;
+    width: 100%;
+    flex-direction: row;
+	display: inline-table;
+	align-items: center;
+}
+.top-content .features{
+	justify-content: center;
+	width: 100%;
+	flex-direction: row;
+}
+.top-content .about{
+	justify-content: center;
+	width: 100%;
+	flex-direction: row;
+}
+.middle-img{
+	width: 100%;
+	align-items: center;
+}
+}
 
